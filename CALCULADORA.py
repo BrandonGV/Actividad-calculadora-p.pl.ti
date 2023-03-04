@@ -18,6 +18,7 @@ f = a / b
 g = a ** b
 h = math.sqrt(a)
 
+
 #salida
 print(f"el resultado de la suma es : {c}")
 print(f"el resultado de la resta es : {d}")
@@ -54,3 +55,15 @@ limite_superior = int(input("Ingrese el límite superior: "))
 numero_aleatorio = random.randint(limite_inferior, limite_superior)
 
 print("El número aleatorio generado es:", numero_aleatorio)
+
+#CALCULADORA SISTEMAS NUMERICOS
+numero = int(input("digite el numero a transformar: "))
+#conv. decimal binario
+binario = bin(numero)
+print(f"binario: {binario}")
+#conv. decimal hexa
+hexa = hex(numero)
+print(f"hexadecimal: {hexa}")
+#conv. decimal-octal
+octal = oct(numero)
+print(f"octal: {octal}")
