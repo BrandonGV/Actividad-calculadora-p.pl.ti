@@ -93,6 +93,7 @@ while True:
         print("el resultado sera del primer valor que ingreses :)")
         a, b = obtener_operandos()
         print( adbsoluto(a,b))
+        
     elif opcion == 9:
         print("el resultado sera del primer valor que ingreses :)")
         a, b = obtener_operandos()
@@ -107,4 +108,3 @@ while True:
         break
     else:
         print("Opción inválida. Por favor elija una opción válida.")
-        
