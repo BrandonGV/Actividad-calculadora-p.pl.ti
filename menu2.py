@@ -34,6 +34,16 @@ def euler(a,b):
 def numAlet(a,b):
      numero_aleatorio = random.randint(a,b)
      print(f"El número aleatorio generado es:  {numero_aleatorio}")
+def Basesnumericas(d):
+    #conv. decimal binario
+    binario = bin(d)
+    print(f"binario: {binario}")
+    #conv. decimal hexa
+    hexa = hex(d)
+    print(f"hexadecimal: {hexa}")
+    #conv. decimal-octal
+    octal = oct(d)
+    print(f"octal: {octal}")
 
 
 
@@ -50,6 +60,7 @@ def menu():
     print("8. obtener el valor absoluto")
     print("9. Constante de euler")
     print("10. Generar numero aleatorio")
+    print("11. decimal a bases numericas")
     print("11. Salir")
     opcion = int(input("Elija una opción: "))
     return opcion
@@ -102,6 +113,10 @@ while True:
         print("El primer valor sera el limite inferio y el segundo el limite superior :)")
         a, b = obtener_operandos()
         print( numAlet(a,b))
+    elif opcion == 11:
+        print("el resultado sera del primer valor que ingreses :)")
+        d = int(input("digite el numero a transformar: "))
+        print( Basesnumericas(d))
     
     elif opcion == 11:
         print("Adiós!")
