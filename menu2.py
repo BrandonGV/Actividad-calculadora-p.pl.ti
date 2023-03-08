@@ -91,6 +91,7 @@ while True:
         else:
             print("El resultado de la división es:", division(a, b))
     elif opcion == 5:
+        print("el resultado sera del primer valor que ingreses :)")
         a, b = obtener_operandos()
         print("El resultado de la raiz es:", raiz(a,b))
     elif opcion == 6:
